@@ -11,16 +11,6 @@
 </div>
 <!-- ./wrapper -->
 
-<!-- Logout -->
-<script>
-    function logout() {
-        if (confirm("Apakah Anda yakin ingin logout?")) {
-            // Redirect ke halaman logout atau panggil fungsi PHP logout
-            document.location.href = '../auth/logout.php';
-        }
-    }
-</script>
-
 <!-- jQuery -->
 <script src="../assets/plugins/jquery/jquery.min.js"></script>
 <!-- jQuery UI 1.11.4 -->

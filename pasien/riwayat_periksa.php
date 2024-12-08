@@ -1,17 +1,17 @@
 <?php
 session_start();
 require '../functions.php';
-include '../layouts/dokter/header.php';
+include '../layouts/pasien/header.php';
 
-// Cek apakah sesi login dokter ada
-if (!isset($_SESSION['login']) || $_SESSION['akses'] !== 'dokter') {
+// Cek apakah sesi login pasien ada
+if (!isset($_SESSION['login']) || $_SESSION['akses'] !== 'pasien') {
     echo "<script>
-            alert('Anda harus login sebagai dokter terlebih dahulu!');
-            document.location.href = '../auth/login_dokter.php';
+            alert('Anda harus login sebagai pasien terlebih dahulu!');
+            document.location.href = '../auth/login_pasien.php';
           </script>";
     exit;
 }
-include '../layouts/dokter/sidebar.php';
+include '../layouts/pasien/sidebar.php';
 ?>
 
 

@@ -1,17 +1,17 @@
 <?php
 session_start();
 require '../functions.php';
-include '../layouts/dokter/header.php';
+include '../layouts/pasien/header.php';
 
-// Cek apakah sesi login dokter ada
-if (!isset($_SESSION['login']) || $_SESSION['akses'] !== 'dokter') {
+// Cek apakah sesi login pasien ada
+if (!isset($_SESSION['login']) || $_SESSION['akses'] !== 'pasien') {
     echo "<script>
-            alert('Anda harus login sebagai dokter terlebih dahulu!');
-            document.location.href = '../auth/login_dokter.php';
+            alert('Anda harus login sebagai pasien terlebih dahulu!');
+            document.location.href = '../auth/login_pasien.php';
           </script>";
     exit;
 }
-include '../layouts/dokter/sidebar.php';
+include '../layouts/pasien/sidebar.php';
 ?>
 
 
@@ -22,12 +22,12 @@ include '../layouts/dokter/sidebar.php';
         <div class="container-fluid">
             <div class="row mb-2">
                 <div class="col-sm-6">
-                    <h1 class="m-0">Dashboard Admin</h1>
+                    <h1 class="m-0">Daftar Poli</h1>
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="index.php">Admin</a></li>
-                        <li class="breadcrumb-item active">Dashboard</li>
+                        <li class="breadcrumb-item"><a href="index.php">Pasien</a></li>
+                        <li class="breadcrumb-item active">Daftar Poli</li>
                     </ol>
                 </div><!-- /.col -->
             </div><!-- /.row -->

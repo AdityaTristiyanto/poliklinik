@@ -84,51 +84,51 @@
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Dashboard
-                                    <span class="right badge badge-success">Admin</span>
+                                    <span class="right badge badge-success">Dokter</span>
                                 </p>
                             </a>
                         </li>
 
-                        <!-- Dokter -->
+                        <!-- Jadwal Periksa -->
                         <li class="nav-item">
-                            <a href="dokter.php" class="nav-link">
+                            <a href="jadwal_periksa.php" class="nav-link">
                                 <i class="nav-icon fas fa-user-md"></i>
                                 <p>
-                                    Dokter
-                                    <span class="right badge badge-success">Admin</span>
+                                    Jadwal Periksa
+                                    <span class="right badge badge-success">Dokter</span>
                                 </p>
                             </a>
                         </li>
 
-                        <!-- Paien -->
+                        <!-- Periksa Pasien -->
                         <li class="nav-item">
-                            <a href="pasien.php" class="nav-link">
+                            <a href="periksa_pasien.php" class="nav-link">
                                 <i class="nav-icon fas fa-user-injured"></i>
                                 <p>
-                                    Pasien
-                                    <span class="right badge badge-success">Admin</span>
+                                    Periksa Pasien
+                                    <span class="right badge badge-success">Dokter</span>
                                 </p>
                             </a>
                         </li>
 
-                        <!-- Poli -->
+                        <!-- Riwayat Pasien -->
                         <li class="nav-item">
-                            <a href="poli.php" class="nav-link">
+                            <a href="riwayat_pasien.php" class="nav-link">
                                 <i class="nav-icon fas fa-hospital"></i>
                                 <p>
-                                    Poli
-                                    <span class="right badge badge-success">Admin</span>
+                                    Riwayat Pasien
+                                    <span class="right badge badge-success">Dokter</span>
                                 </p>
                             </a>
                         </li>
 
-                        <!-- Obat -->
+                        <!-- Profil Dokter -->
                         <li class="nav-item">
-                            <a href="obat.php" class="nav-link">
+                            <a href="profil_dokter.php" class="nav-link">
                                 <i class="nav-icon fas fa-pills"></i>
                                 <p>
-                                    Obat
-                                    <span class="right badge badge-success">Admin</span>
+                                    Profil
+                                    <span class="right badge badge-success">Dokter</span>
                                 </p>
                             </a>
                         </li>

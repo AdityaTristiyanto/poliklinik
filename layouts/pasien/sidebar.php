@@ -71,7 +71,7 @@
                         <img src="../assets/dist/img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <a href="#" class="d-block">Admin</a>
+                        <a href="#" class="d-block">Pasien</a>
                     </div>
                 </div>
 
@@ -84,51 +84,29 @@
                                 <i class="nav-icon fas fa-th"></i>
                                 <p>
                                     Dashboard
-                                    <span class="right badge badge-success">Admin</span>
+                                    <span class="right badge badge-success">Pasien</span>
                                 </p>
                             </a>
                         </li>
 
-                        <!-- Dokter -->
+                        <!-- Daftar Poli -->
                         <li class="nav-item">
-                            <a href="dokter.php" class="nav-link">
+                            <a href="daftar_poli.php" class="nav-link">
                                 <i class="nav-icon fas fa-user-md"></i>
                                 <p>
-                                    Dokter
-                                    <span class="right badge badge-success">Admin</span>
+                                    Daftar Poli
+                                    <span class="right badge badge-success">Pasien</span>
                                 </p>
                             </a>
                         </li>
 
-                        <!-- Paien -->
+                        <!-- Riwayat Periksa -->
                         <li class="nav-item">
-                            <a href="pasien.php" class="nav-link">
+                            <a href="riwayat_periksa.php" class="nav-link">
                                 <i class="nav-icon fas fa-user-injured"></i>
                                 <p>
-                                    Pasien
-                                    <span class="right badge badge-success">Admin</span>
-                                </p>
-                            </a>
-                        </li>
-
-                        <!-- Poli -->
-                        <li class="nav-item">
-                            <a href="poli.php" class="nav-link">
-                                <i class="nav-icon fas fa-hospital"></i>
-                                <p>
-                                    Poli
-                                    <span class="right badge badge-success">Admin</span>
-                                </p>
-                            </a>
-                        </li>
-
-                        <!-- Obat -->
-                        <li class="nav-item">
-                            <a href="obat.php" class="nav-link">
-                                <i class="nav-icon fas fa-pills"></i>
-                                <p>
-                                    Obat
-                                    <span class="right badge badge-success">Admin</span>
+                                    Riwayat Periksa
+                                    <span class="right badge badge-success">Pasien</span>
                                 </p>
                             </a>
                         </li>

@@ -1,11 +1,23 @@
 <?php
 session_start();
 require '../functions.php';
-include '../layouts/admin/header.php'; // Menyertakan header
-?>
-        <?php include '../layouts/admin/sidebar.php'; ?>
 
-        <!-- Content Wrapper. Contains page content -->
+include '../layouts/admin/header.php';
+
+// Cek apakah sesi login admin ada
+if (!isset($_SESSION['login']) || $_SESSION['akses'] !== 'admin') {
+    echo "<script>
+            alert('Anda harus login sebagai admin terlebih dahulu!');
+            document.location.href = '../auth/login.php';
+          </script>";
+    exit;
+}
+include '../layouts/admin/sidebar.php';
+?>
+
+
+
+<!-- Content Wrapper. Contains page content -->
 <div class="content-wrapper">
     <!-- Content Header (Page header) -->
     <div class="content-header">
@@ -16,7 +28,7 @@ include '../layouts/admin/header.php'; // Menyertakan header
                 </div><!-- /.col -->
                 <div class="col-sm-6">
                     <ol class="breadcrumb float-sm-right">
-                        <li class="breadcrumb-item"><a href="#">Admin</a></li>
+                        <li class="breadcrumb-item"><a href="index.php">Admin</a></li>
                         <li class="breadcrumb-item active">Dashboard</li>
                     </ol>
                 </div><!-- /.col -->
@@ -99,5 +111,5 @@ include '../layouts/admin/header.php'; // Menyertakan header
 </div>
 <!-- /.content-wrapper -->
 
-        <!-- Footer -->
-        <?php include '../layouts/admin/footer.php'; ?>
+<!-- Footer -->
+<?php include '../layouts/admin/footer.php'; ?>
